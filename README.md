@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CreditMate - Credit and Debt Manager
+
+CreditMate is a credit and debit manager built with Next.js, a popular React-based web framework.
 
 ## Getting Started
 
-First, run the development server:
+To get started with CreditMate, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+1. Clone the repository to your local machine:
+
+```shell
+git clone git@github.com:ahammednafih/credit-mate-next.git
+```
+
+2. Navigate to the project directory:
+
+```shell
+cd credit-mate-next
+```
+
+3. Install dependencies:
+
+```shell
+pnpm i
+```
+
+4. Start the development server:
+
+```shell
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+CreditMate uses environment variables to store sensitive information like API keys and database credentials. These variables can be set in a `.env` file in the root directory of the project. However, if you want to use different variables locally, you can create a `.env.local` file, which will take precedence over `.env`.
 
-## Learn More
+Make sure not to commit your `.env` or `.env.local` files to version control to avoid exposing sensitive information.
 
-To learn more about Next.js, take a look at the following resources:
+## Commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```shell
+# Start the development server.
+pnpm dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Build the production application.
+pnpm build
 
-## Deploy on Vercel
+# Start the production server.
+pnpm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Lint the codebase.
+pnpm lint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Run tests
+pnpm test
+```

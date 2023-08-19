@@ -1,0 +1,19 @@
+# Ignore build and distribution directories
+.next/
+out/
+dist/
+build/
+public/
+
+# Ignore Node.js modules and package lock files
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Ignore specific files and directories
+.eslintrc
+.prettierrc.json
+.vscode/
+*.md
+*.config.js
